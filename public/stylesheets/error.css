@@ -1,0 +1,72 @@
+body {
+    background-color: #f9f9f9;
+}
+.errorMain{
+    margin: 0 auto;
+    padding-top: 58px;
+    border: 0;width: 90%;height: auto;
+}
+.errorCont{
+    margin: 0 auto;
+    width: 100%;
+    box-sizing:border-box;
+    height: auto;
+    padding: 18px 42px 23px 27px;
+    border: solid 2px #d9d9d9;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.errorCont h3{
+    color: #282828;
+    font-size: 25px;
+    margin:0;
+}
+.errorContCenter{
+    margin-top: 32px;
+    padding-left: 0;
+    font-size: 23px;
+    line-height: 70px;
+    font-weight: bold;
+}
+.errorContCenter img{
+    display: block;
+    float: left;
+    margin-right: 14px;
+}
+.errorContBtn{
+    margin-bottom: 13px;
+    display: block;
+    clear: both;
+}
+.errorContBtn input{
+    float: right;
+    width: 83px;
+    height: 35px;
+    font-size: 16px;
+    color: #f1f1f1;
+    border: none;
+    background: none;
+    background: url("../images/btnBg.png") no-repeat center;
+}
+.errorBottom{
+    font-size: 14px;
+    color: #666;
+    margin-top: 12px;
+    text-align: center;
+
+}
+.msg-content {font-size:14px;line-height: 20px;display: block;padding-top: 15px;}
+/******clear float*******/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {display: inline-table;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

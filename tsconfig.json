@@ -1,8 +1,11 @@
 {
+  "include": ["src/**/*"],
+  "exclude": ["functions/**/*"],
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "outDir": "./functions",
     "strict": true,
     "skipLibCheck": true,
     "lib": [
