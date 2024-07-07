@@ -4,14 +4,19 @@
     "page-dev": "wrangler pages dev public",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
+    "log": "wrangler pages deployment tail",
+    "lint": "eslint --fix",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
-    "hono": "^4.3.8"
+    "node-slogger": "3.0.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240512.0",
+    "eslint": "^9.6.0",
+    "globals": "^15.8.0",
     "typescript": "^5.4.5",
+    "typescript-eslint": "^7.15.0",
     "wrangler": "^3.47.0"
   }
 }
