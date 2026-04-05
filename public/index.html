@@ -2,80 +2,286 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="G1fh5LdQwTFHcGovLLQNlLyBut-RA-Z4tKs01Ml4ejA" />
-    <title>FaWave</title>
-    <meta name="Author" content="whyun.com">
-    <meta name="Keywords" content="FaWave 发微 微博 chrome扩展">
-    <meta name="Description" content="FaWave首页">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="G1fh5LdQwTFHcGovLLQNlLyBut-RA-Z4tKs01Ml4ejA">
+    <title>FaWave(发微) | 官方网站</title>
+    <meta name="author" content="FaWave">
+    <meta name="keywords" content="FaWave, 发微, Chrome 扩展, Chromium 插件, 多平台分享, Weibo, Twitter, Plurk, Tumblr">
+    <meta name="description" content="FaWave(发微) 是一个面向 Chromium 浏览器的多平台分享扩展，支持网页、选中文本、链接与图片快速分享，并提供多账号管理、AI 总结与快捷发送能力。">
+    <meta property="og:title" content="FaWave(发微) | 官方网站">
+    <meta property="og:description" content="多平台分享扩展，支持网页、选中文本、链接、图片与 AI 总结。">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-<xmp theme="united" style="display:none;">
-![logo](/images/icon128.png)
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#top" aria-label="FaWave 首页">
+                <img class="brand-mark" src="/images/fawave-logo-48.png" alt="">
+                <span class="brand-text">
+                    <strong>FaWave</strong>
+                    <span>发微</span>
+                </span>
+            </a>
+            <nav class="nav">
+                <a href="#features">能力</a>
+                <a href="#install">安装</a>
+                <a href="#platforms">平台</a>
+                <a href="#updates">更新</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+        </div>
+    </header>
 
-> 注意：新发布的 v2017.3.11.1 版，使用了新版微博发送 API，发送挖成之后末尾会带有指向本页的链接，这个是微博的硬性要求，如果有其他绕过此政策的方法，欢迎私信我。
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>FaWave(发微)</h1>
+                    <p class="hero-tagline">经典且持续维护的多平台分享扩展</p>
+                    <p class="lead">
+                        面向 Chromium 浏览器，支持将网页、选中文本、链接、图片等内容快速分享到多个已授权账号，
+                        同时保留多账号管理、快捷发送、URL 缩短与 AI 总结等能力。
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="https://chrome.google.com/webstore/detail/fawave/elbkcajfelcihnbipppmnodnfahbhbad" target="_blank" rel="noreferrer">Chrome 商店安装</a>
+                    </div>
+                    <ul class="hero-meta">
+                        <li>Manifest V3 适配</li>
+                        <li>支持右键分享与弹出页发送</li>
+                        <li>支持 AI 总结网页</li>
+                    </ul>
+                </div>
+                <div class="hero-card">
+                    <div class="hero-card-top">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="hero-card-body">
+                        <img class="mini-logo" src="/images/fawave-logo-128.png" alt="">
+                        <h2>Share with FaWave</h2>
+                        <p>分享当前网页、选中文本、链接或图片</p>
+                        <div class="feature-pills">
+                            <span>多账号</span>
+                            <span>快捷发送</span>
+                            <span>AI 总结</span>
+                            <span>URL 缩短</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-FaWave（中文名称发微）支持国内外常见的社交媒体账号登陆，之前是由[@QLeelulu](http://www.weibo.com/u/1644902943) 和 [@Python发烧友](http://www.weibo.com/u/1640328892)来维护的，不过后来从chrome 商店中下架了。本人也是这个插件的使用者，不想让这么好的插件从此消失，所以在征得@Python发烧友 同意的前提下，将其重新上架。现在如果在使用上遇到问题，请找 [@白一梓](http://www.weibo.com/u/1261004702) 反馈。
+        <section class="section">
+            <div class="container announcement">
+                <strong>当前定位</strong>
+                <p>
+                    新版官网内容依据 `fawave` 当前代码仓库重新整理，重点反映扩展的现状能力：
+                    多平台分享、Manifest V3 兼容、AI 总结、右键分享修复，以及更适合现代 Chromium 浏览器的安装方式。
+                </p>
+            </div>
+        </section>
 
-## 支持的微博
+        <section id="features" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">核心能力</p>
+                    <h2>把“看到内容就发出去”这件事做得更顺手</h2>
+                </div>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>多入口分享</h3>
+                        <p>支持弹出页发送，也支持在网页右键菜单中直接使用 `Share with FaWave` 调起快捷发送面板。</p>
+                    </article>
+                    <article class="card">
+                        <h3>多类型内容</h3>
+                        <p>支持当前网页、选中文本、链接和图片分享，适合转帖、摘录、同步评论和素材搬运。</p>
+                    </article>
+                    <article class="card">
+                        <h3>多账号管理</h3>
+                        <p>可管理多个已授权账号，支持默认发送策略、快捷发送与按需同步到多个平台。</p>
+                    </article>
+                    <article class="card">
+                        <h3>AI 总结网页</h3>
+                        <p>可为当前网页生成适合直接分享的简短摘要，并提供模型、Base URL、API Key 等配置入口。</p>
+                    </article>
+                    <article class="card">
+                        <h3>辅助工具</h3>
+                        <p>保留 URL 缩短、图片上传、截图分享等能力，减少从阅读到发帖之间的切换成本。</p>
+                    </article>
+                    <article class="card">
+                        <h3>持续维护</h3>
+                        <p>当前项目已补充基础单元测试、mock 测试和首批 E2E 基础设施，便于继续维护和迭代。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-- 新浪微博 http://weibo.com
-- 腾讯微博 http://t.qq.com/
-- 豆瓣 https://www.douban.com/
-- 饭否 http://fanfou.com/
-- 雷猴 http://leihou.com/
-- 天涯微博 http://www.tianya.cn/
-- Twitter https://twitter.com/
-- Google Plus https://plus.google.com/
-- Plurk https://www.plurk.com
+        <section id="install" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">安装方式</p>
+                    <h2>支持商店安装，也支持本地加载</h2>
+                </div>
+                <div class="install-grid">
+                    <article class="install-card">
+                        <h3>浏览器商店安装</h3>
+                        <p>适合普通用户，安装后即可直接使用。</p>
+                        <div class="button-group">
+                            <a class="button button-primary" href="https://chrome.google.com/webstore/detail/fawave/elbkcajfelcihnbipppmnodnfahbhbad" target="_blank" rel="noreferrer">Chrome Web Store</a>
+                        </div>
+                    </article>
+                    <article class="install-card">
+                        <h3>本地加载开发版</h3>
+                        <ol class="steps">
+                            <li>打开 `chrome://extensions/` 或 `edge://extensions/`</li>
+                            <li>开启“开发者模式”</li>
+                            <li>选择“加载已解压的扩展程序”</li>
+                            <li>指向本地 `fawave` 项目目录</li>
+                        </ol>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-> Facebook 作为国际上使用最广泛的社交工具，FaWave 竟然没有支持，你们肯定有这种疑惑，但是鉴于 Facebook 本身对于应用审核要求的非常之严格，在开发过程中遇到种种障碍，现在还不能对其进行支持。
+        <section id="platforms" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">当前支持</p>
+                    <h2>聚焦仍然可维护、可工作的分享平台</h2>
+                </div>
+                <div class="platform-grid">
+                    <article class="platform-card">
+                        <h3>Weibo</h3>
+                        <p>保留微博生态的主要分享与发送能力。</p>
+                    </article>
+                    <article class="platform-card">
+                        <h3>Twitter / X</h3>
+                        <p>支持按当前接入方式发送与回复，需用户自备可用开发者 API Key / Secret。</p>
+                    </article>
+                    <article class="platform-card">
+                        <h3>Plurk</h3>
+                        <p>保留既有接入能力，适用于轻量多平台同步分享。</p>
+                    </article>
+                    <article class="platform-card">
+                        <h3>Tumblr</h3>
+                        <p>已切换官方 OAuth 2.0 授权，并补齐 likes / followers / following / posts 等接口能力。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-## 下载地址
+        <section id="updates" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">近期更新</p>
+                    <h2>从老牌扩展，演进到可继续维护的现代版本</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-date">2026.4.5</div>
+                        <div class="timeline-body">
+                            <h3>分享链路与 AI 能力增强</h3>
+                            <p>修复右键分享在部分页面无响应的问题，新增网页选中文本分享、网页 AI 总结和大模型设置，提升发送完成反馈与调试能力。</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">2026.3.30</div>
+                        <div class="timeline-body">
+                            <h3>Tumblr OAuth 2.0 与 MV3 完整适配</h3>
+                            <p>切换到官方 OAuth 2.0 授权流，补齐相关接口支持，并调整权限与打包配置以适配现代扩展环境。</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-date">长期维护</div>
+                        <div class="timeline-body">
+                            <h3>保留经典体验，逐步剥离历史包袱</h3>
+                            <p>在兼容 legacy 逻辑的同时，为现代 Chrome / Edge 扩展环境补齐测试、日志和模块化结构，降低后续维护成本。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-- [chrome 商店地址](https://chrome.google.com/webstore/detail/fawave/elbkcajfelcihnbipppmnodnfahbhbad) 适合直接在 chrome 应用商店中安装
-- [离线安装地址](https://silian.whyun.com/app/elbkcajfelcihnbipppmnodnfahbhbad_main.crx) 适合在 [chromium](https://www.chromium.org/) 或者360等 blink 内核的浏览器中离线安装
+        <section class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">使用建议</p>
+                    <h2>适合这些典型场景</h2>
+                </div>
+                <div class="usage-grid">
+                    <article class="usage-card">
+                        <h3>转发网页</h3>
+                        <p>在阅读新闻、博客、帖子时，直接把标题和链接送入发送框。</p>
+                    </article>
+                    <article class="usage-card">
+                        <h3>摘录观点</h3>
+                        <p>先选中文本，再通过右键分享，将原文重点一键带入快捷发送面板。</p>
+                    </article>
+                    <article class="usage-card">
+                        <h3>AI 辅助整理</h3>
+                        <p>在长文章页面调用 AI 总结，把复杂内容压缩成更适合社交平台发布的短摘要。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-## 最近更新历史
+        <section id="faq" class="section section-alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">FAQ</p>
+                    <h2>一些常见问题</h2>
+                </div>
+                <div class="faq-list">
+                    <article class="faq-item">
+                        <h3>FaWave 现在还是老插件吗？</h3>
+                        <p>不是简单存档版。当前代码已经适配 Manifest V3，并保留兼容层，让经典功能在现代浏览器环境下继续可用。</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>为什么支持的平台没有以前那么多？</h3>
+                        <p>官网以当前代码仓库中的真实可维护能力为准，只展示仍有接入实现和维护价值的平台。</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>AI 总结默认可用吗？</h3>
+                        <p>需要先在扩展的高级设置中配置 AI 提供方、模型、接口地址和 API Key，之后才能在网页上调用总结功能。</p>
+                    </article>
+                    <article class="faq-item">
+                        <h3>Twitter / X 为什么需要自己提供 Key？</h3>
+                        <p>当前接入方式依赖用户自己的开发者凭据，这是为了适配现有接口政策并保证可持续使用。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-- v2017.3.11.0 / 2017-08-13
+        <section class="section">
+            <div class="container announcement">
+                <strong>联系方式</strong>
+                <p>有问题找 白一梓 解决。你也可以通过 <a href="https://weibo.com/u/1261004702" target="_blank" rel="noreferrer">白一梓的微博</a> 反馈使用问题。</p>
+            </div>
+        </section>
 
+        <section class="section">
+            <div class="container cta">
+                <div>
+                    <p class="eyebrow">官方链接</p>
+                    <h2>继续了解 FaWave</h2>
+                    <p>如需查看项目背景、旧资料和相关讨论，可继续访问扩展商店页面与历史资料链接。</p>
+                </div>
+                <div class="button-group">
+                    <a class="button button-primary" href="https://weibo.com/falang" target="_blank" rel="noreferrer">官方微博</a>
+                    <a class="button button-secondary" href="https://www.appinn.com/chrome-fawave/" target="_blank" rel="noreferrer">历史介绍</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    * 使用新版微博开发者帐号，以解决发送微博问题
-
-- v2017.3.10.1 / 2017-07-09
-
-
-    * 修正发图的按钮图标错乱问题
-
-- v2017.3.9.4 / 2017-07-02
-
-
-  * 修正OAuth2登录回调失败的问题
-
-- v2017.1.11.0 / 2017-1-11
-
-
-    * 去掉翻译功能
-    * 屏蔽twitter的短链接解析功能
-    * 修正天涯头像显示问题
-    * 删除微博1.0用户类型
-
-- v2016.3.9.2 / 2016-11-14
-
-
-    * 删除或者屏蔽掉失效的微博类型
-
-- v2016.3.9.1 / 2016-10-16
-
-
-    * 修正API速率查看界面无法正常显示的问题
-    * 更新新浪微博表情
-    
-## 鸣谢
-
-- 感谢 @rainwoods 提供修改微博接口定时请求时间间隔的功能
-- 感谢 @南崇雷 提供宣传海报
-</xmp>
-<script src="/javascripts/lib/strapdown/v/0.2/strapdown.js"></script>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>FaWave(发微) 官方站点</p>
+            <p>内容基于当前扩展仓库能力、manifest、README 与更新历史整理。</p>
+        </div>
+    </footer>
 </body>
 </html>
